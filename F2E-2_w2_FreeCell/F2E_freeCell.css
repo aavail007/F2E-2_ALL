@@ -1,0 +1,12 @@
+body {
+    background-color: #C8D6C9;
+}
+
+.fc_btn {
+    color: #ffffff;
+    height: 40px;
+    border: solid 2px #ffffff;
+    border-radius: 20px;
+    padding: 8px 30px;
+    display: inline-block;
+}
