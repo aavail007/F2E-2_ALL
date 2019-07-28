@@ -2,6 +2,30 @@ body {
     background-color: #C8D6C9;
 }
 
+.hide {
+    display: none !important;
+}
+
+.m-t {
+    margin-top: 15px;
+}
+
+.m-t-xl {
+    margin-top: 30px;
+}
+
+.m-l {
+    margin-left: 15px;
+}
+
+.m-l-xxl {
+    margin-left: 80px;
+}
+
+.pull-right {
+    float: right;
+}
+
 .fc_btn {
     color: #ffffff;
     height: 40px;
@@ -9,4 +33,152 @@ body {
     border-radius: 20px;
     padding: 8px 30px;
     display: inline-block;
+    cursor: pointer;
+
+}
+
+.fc_btn:hover {
+    background-color: #88A38A;
+    color: #ffffff;
+    border: solid 2px #88A38A;
+}
+
+.card_border {
+    position: relative;
+    border: solid rgba(112, 112, 112, 0.45) 2px;
+    width: 100px;
+    height: 150px;
+    border-radius: 11px;
+    box-shadow: 2px -1px 5px rgba(0, 0, 0, 0.15);
+    display: inline-block;
+    margin: 0 6px;
+}
+
+.all_card_div {
+    position: relative;
+    height: 570px;
+}
+
+.poke_card_div {
+    /* display: inline-block; */
+    margin: 0 12px;
+}
+
+.card_border img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.poke_card {
+    width: 100px;
+}
+
+.card_position {
+    position: relative;
+    display: inline-block;
+    margin: 0 60px;
+}
+
+.card_row_1 {
+    z-index: 1;
+    top: 0;
+    position: absolute;
+}
+
+.card_row_2 {
+    z-index: 2;
+    top: 50px;
+    position: absolute;
+}
+
+.card_row_3 {
+    z-index: 3;
+    top: 100px;
+    position: absolute;
+}
+
+.card_row_4 {
+    z-index: 4;
+    top: 150px;
+    position: absolute;
+}
+
+.card_row_5 {
+    z-index: 5;
+    top: 200px;
+    position: absolute;
+}
+
+.card_row_6 {
+    z-index: 6;
+    top: 250px;
+    position: absolute;
+}
+
+.card_row_7 {
+    z-index: 7;
+    top: 300px;
+    position: absolute;
+}
+
+.card_row_8 {
+    z-index: 8;
+    top: 350px;
+    position: absolute;
+}
+
+.bottom_info {
+    position: absolute;
+    top: 620px;
+    color: #ffffff;
+    width: 100%;
+    font-size: 24px;
+}
+
+.info_right {
+    color: rgba(0, 0, 0, 0.2);
+    margin-right: 30px;
+}
+
+.game_title {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    font-size: 70px;
+    color: rgba(0, 0, 0, 0.1);
+    z-index: 0;
+}
+
+.card_border>.poke_card_div {
+    display: block;
+    position: initial;
+}
+
+.modal_title {
+    color: #88A38A;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.modal_btn {
+    border: solid 2px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 5px 15px;
+    width: 300px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 8px 0;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.modal_btn:hover {
+    background-color: #88A38A;
+    color: #ffffff;
+    border: solid 2px #88A38A;
+}
+
+.modal-content {
+    padding: 25px;
 }

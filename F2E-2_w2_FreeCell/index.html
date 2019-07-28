@@ -6,26 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>THE F2E-2_新接龍</title>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/fontawesome-free-5.9.0-web/css/all.min.css">
     <link rel="stylesheet" href=" F2E_freeCell.css">
-    <script src="https://kit.fontawesome.com/aca024162d.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="F2E_freeCell.js"></script>
+
 </head>
 
 <body>
-    <div class="row">
-        <div class="col-md-3">
-            <div class="fc_btn">
-                REDO
+    <div class="row m-t-xl  m-l">
+        <!-- Modal -->
+        <div class="modal fade" id="stopModal" tabindex="-1" role="dialog" aria-labelledby="stopModalTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <h1 class="modal_title">FREECELL</h1>
+                        <div class="modal_btn" id="modalStart">QUICK and START A NEW GAME</div>
+                        <div class="modal_btn hide" id="modalRestart">RESTART THIS GAME</div>
+                        <div class="modal_btn hide" id="keepPlaying">KEEP PLAYING</div>
+                    </div>
+                </div>
             </div>
         </div>
-
+        <div class="col-md-2">
+            <div class="fc_btn">
+                <i class="fas fa-redo-alt fa-flip-horizontal"></i> REDO
+            </div>
+            <div class="fc_btn m-t" id="newGameBtn">
+                <i class="fas fa-sync-alt"></i> NEW GAME
+            </div>
+            <div class="fc_btn m-t" id="pause" data-toggle="modal" data-target="#stopModal">
+                <i class="fas fa-pause"></i> <span>PAUSE</span>
+            </div>
+            <div class="bottom_info">
+                <div>
+                    <span>SCORE</span>
+                    <span class="pull-right info_right">0</span>
+                </div>
+                <div>
+                    <span>TIME</span>
+                    <span class="pull-right info_right" id="time">00:00:00</span>
+                </div>
+                <div>
+                    <span>MOVES</span>
+                    <span class="pull-right info_right" id="movesCount">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <div>
+                <div class="card_border" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+                <div class="card_border" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+                <div class="card_border" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+                <div class="card_border" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+                <span class="m-l-xxl"></span>
+                <div class="card_border" ondrop="Drop(event)" ondragover="AllowDrop(event)"><img src="card_img/01.png">
+                </div>
+                <div class="card_border" ondrop="Drop(event)" ondragover="AllowDrop(event)"><img src="card_img/02.png">
+                </div>
+                <div class="card_border" ondrop="Drop(event)" ondragover="AllowDrop(event)"><img src="card_img/03.png">
+                </div>
+                <div class="card_border" ondrop="Drop(event)" ondragover="AllowDrop(event)"><img src="card_img/04.png">
+                </div>
+            </div>
+            <div class="all_card_div m-t-xl">
+                <div class="card_position" id="cardRow1" style="margin-left: 0px;"></div>
+                <div class="card_position" id="cardRow2"></div>
+                <div class="card_position" id="cardRow3"></div>
+                <div class="card_position" id="cardRow4"></div>
+                <div class="card_position" id="cardRow5"></div>
+                <div class="card_position" id="cardRow6"></div>
+                <div class="card_position" id="cardRow7"></div>
+                <div class="card_position" id="cardRow8"></div>
+            </div>
+            <h1 class="game_title">FREECELL</h1>
+        </div>
     </div>
-
 
 </body>
 
 </html>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+</script>
+<script src="F2E_freeCell.js"></script>
