@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>THE F2E-3_MP3 Player</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/fontawesome-free-5.9.0-web/css/all.min.css">
+    <link rel="stylesheet" href=" F2E_mp3.css">
+
+</head>
+
+<body>
+    <div id="playTool" class="play_tool hide">
+        <audio controls="controls" class="hide">
+            <source src="music/Mariposa.mp3" type="audio/mpeg" />
+        </audio>
+        <span class="likeBtn"><i class="far fa-heart"></i></span>
+        <div class="playWord">
+            <div>TOMBOY </div>
+            <div class="author">HYUKOH</div>
+        </div>
+        <span class="play_btn">
+            <span class="playbtn_item"><i class="fas fa-step-backward"></i></span>
+            <span class="playbtn_item pause_circle"><i class="fas fa-play"></i></span>
+            <span class="playbtn_item"><i class="fas fa-step-forward"></i></span>
+        </span>
+        <span class="playbtn_item more_btn"><i class="fas fa-ellipsis-v"></i></span>
+    </div>
+    <div id="ToolBar" class="toolbar">
+        <div class="toolBtn active" id="goHomeBtn">
+            <i class="fas fa-home"></i>
+            <div class="toolName">Home</div>
+        </div>
+        <div class="toolBtn">
+            <i class="fas fa-search"></i>
+            <div class="toolName">Search</div>
+        </div>
+        <div class="toolBtn" id="playLists">
+            <i class="fas fa-list-alt"></i>
+            <div class="toolName">Playlists</div>
+        </div>
+
+    </div>
+    <div id="app">
+        <div id="index" class="index">
+            <div>
+                <div class="hello_word">{{ hello }}</div>
+                <div class="userHead"><img src="img/user.JPG"></div>
+            </div>
+            <div>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                            aria-controls="home" aria-selected="true">For you</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                            aria-controls="profile" aria-selected="false">Discovery</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="scroll_y_div">
+                            <div class="musicCard"><img src="img/music01.jpeg">
+                                <div class="img_word">
+                                    <h5 class="cd_title">{{musTitle1}} </h5>
+                                    <p class="cd_detle">{{musDetle1}}</p>
+                                </div>
+                            </div>
+                            <div class="musicCard"><img src="img/music02.jpg">
+                                <div class="img_word">
+                                    <h5 class="cd_title"> {{musTitle2}}</h5>
+                                    <p class="cd_detle">{{musDetle2}}</p>
+                                </div>
+                            </div>
+                            <div class="musicCard"><img src="img/music03.jpg">
+                                <div class="img_word">
+                                    <h5 class="cd_title">{{musTitle3}} </h5>
+                                    <p class="cd_detle">{{musDetle3}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="scroll_y_div">
+                            <div class="musicCard"><img src="img/music03.jpg">
+                                <div class="img_word">
+                                    <h5 class="cd_title">{{musTitle3}} </h5>
+                                    <p class="cd_detle">{{musDetle3}}</p>
+                                </div>
+                            </div>
+                            <div class="musicCard"><img src="img/music01.jpeg">
+                                <div class="img_word">
+                                    <h5 class="cd_title"> {{musTitle1}}</h5>
+                                    <p class="cd_detle">{{musDetle1}}</p>
+                                </div>
+                            </div>
+                            <div class="musicCard"><img src="img/music02.jpg">
+                                <div class="img_word">
+                                    <h5 class="cd_title">{{musTitle2}} </h5>
+                                    <p class="cd_detle">{{musDetle2}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="historyDiv">
+                <div class="historyTitle">Listening History</div>
+                <div style="overflow:auto;">
+                    <div class="scroll_y_div2">
+                        <div class="history_mus">
+                            <div class="history_mus_img">
+                                <img src="img/music02.jpg">
+                            </div>
+                            <div>{{musTitle2}}</div>
+                        </div>
+                        <div class="history_mus">
+                            <div class="history_mus_img">
+                                <img src="img/music03.jpg">
+                            </div>
+                            <div>{{musTitle3}}</div>
+                        </div>
+                        <div class="history_mus">
+                            <div class="history_mus_img">
+                                <img src="img/music01.jpeg">
+                            </div>
+                            <div>{{musTitle1}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--  -->
+        <div id="artList" class="artist hide">
+            <div class="cd_img">
+                <img src="img/music02.jpg">
+                <div class="userHead"><img src="img/user.JPG"></div>
+                <div class="artList_title">{{musTitle2}}</div>
+                <div class="flowwBtn">Fllow</div>
+                <div class="art_play"><i class="fas fa-play"></i></div>
+            </div>
+            <div class="hotDiv">
+                <div class="hotWord">HOT</div>
+                <div class="hotList">
+                    <div class="listItem">
+                        <span class="likeBtn"><i class="far fa-heart"></i></span>
+                        <div class="listWord">
+                            <div>Burning youth</div>
+                            <div class="author">HYUKOH</div>
+                        </div>
+                        <span class="mus_time">3:10</span>
+                        <span class="mus_add"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <hr class="listHr">
+                    <div class="listItem">
+                        <span class="likeBtn"><i class="far fa-heart"></i></span>
+                        <div class="listWord">
+                            <div>Tokyo Inn </div>
+                            <div class="author">HYUKOH</div>
+                        </div>
+                        <span class="mus_time">3:26</span>
+                        <span class="mus_add"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <hr class="listHr">
+                    <div class="listItem">
+                        <span class="likeBtn"><i class="far fa-heart"></i></span>
+                        <div class="listWord">
+                            <div>Leather Jacket</div>
+                            <div class="author">HYUKOH</div>
+                        </div>
+                        <span class="mus_time">3:34</span>
+                        <span class="mus_add"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <hr class="listHr">
+                    <div class="listItem">
+                        <span class="likeBtn"><i class="far fa-heart"></i></span>
+                        <div class="listWord">
+                            <div>TOMBOY </div>
+                            <div class="author">HYUKOH</div>
+                        </div>
+                        <span class="mus_time">3:09</span>
+                        <span class="mus_add"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <hr class="listHr">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="F2E_mp3.js"></script>

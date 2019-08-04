@@ -1,0 +1,387 @@
+body {
+    background-color: #F5CD40;
+}
+
+.hide {
+    display: none !important;
+}
+
+.m-t {
+    margin-top: 15px;
+}
+
+.m-t-xl {
+    margin-top: 30px;
+}
+
+.m-l {
+    margin-left: 15px;
+}
+
+.m-l-xxl {
+    margin-left: 80px;
+}
+
+.pull-right {
+    float: right;
+}
+
+/* ======================== */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+#app {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 1;
+}
+
+.toolbar {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 70px;
+    background: #F6DE6D;
+    z-index: 2;
+    overflow: hidden;
+    text-align: center;
+}
+
+.toolBtn {
+    display: inline-block;
+    margin: 15px 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.toolBtn i {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 24px;
+    text-shadow: 0px 3px 8px #AD8700;
+}
+
+.toolName {
+    font-size: 12px;
+}
+
+.toolBtn.active i {
+    color: #fff;
+}
+
+.hello_word {
+    text-shadow: 0px 3px 17px #AD8700;
+    color: #ffffff;
+    display: inline-block;
+    margin: 50px 20px 20px 30px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.userHead {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 35px;
+    right: 45px;
+}
+
+.userHead img,
+.musicCard img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 3px #fff;
+}
+
+.nav-tabs {
+    border-bottom: none;
+    margin: 30px;
+}
+
+.nav-tabs a {
+    color: #fff;
+    font-size: 20px;
+}
+
+.tab-content {
+    margin: 0 30px;
+}
+
+.musicCard {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    border-radius: 11px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 5px 8px;
+    cursor: pointer;
+}
+
+.tab-pane {
+    overflow: scroll;
+}
+
+.scroll_y_div {
+    width: 700px;
+}
+
+.scroll_y_div2 {
+    width: 500px;
+}
+
+.img_word {
+    position: absolute;
+    bottom: 0px;
+    background: -moz-linear-gradient(rgba(255, 255, 255, 0.36) 0%, rgba(255, 255, 255, 0.9) 100%);
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.36) 0%, rgba(255, 255, 255, 0.9) 100%);
+    background: linear-gradient(rgba(255, 255, 255, 0.36) 0%, rgba(255, 255, 255, 0.9) 100%);
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    text-align: left;
+}
+
+.cd_title {
+    position: absolute;
+    bottom: 65px;
+}
+
+.cd_detle {
+    font-size: 12px;
+    width: 90%;
+    position: absolute;
+    bottom: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.historyTitle {
+    font-size: 20px;
+    color: #fff;
+    border-bottom: solid 3px #fff;
+    display: inline-block;
+}
+
+.nav-link {
+    padding: 0;
+    margin: 0 10px;
+}
+
+.historyDiv {
+    margin: 30px;
+    margin: 30px 30px 90px 30px;
+}
+
+.history_mus {
+    display: inline-block;
+    text-align: center;
+}
+
+.history_mus_img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px 15px;
+}
+
+.history_mus img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cd_img {
+    height: 320px;
+    width: 100%;
+    position: relative;
+}
+
+.cd_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 0 0 60px;
+}
+
+.userHead img {
+    border-radius: 50%;
+}
+
+.artist {
+    background-color: #fff;
+    height: 100%;
+    padding-bottom: 110px;
+}
+
+.artList_title {
+    position: absolute;
+    bottom: 50px;
+    color: #fff;
+    font-size: 24px;
+    margin: 30px;
+}
+
+.flowwBtn {
+    color: #fff;
+    padding: 2px 30px;
+    border-radius: 20px;
+    border: solid 2px #fff;
+    position: absolute;
+    bottom: 25px;
+    margin: 0 30px;
+}
+
+.art_play {
+    position: absolute;
+    bottom: -25px;
+    right: 30px;
+    width: 54px;
+    height: 54px;
+    background-color: #F5CD40;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0px 8px 12px #FFF498;
+}
+
+.art_play i {
+    font-size: 20px;
+    margin-top: 18px;
+    margin-left: 5px;
+}
+
+.hotDiv {
+    margin-bottom: 160px;
+}
+
+.hotList {
+    margin: 5px 30px;
+    position: relative;
+}
+
+.hotWord {
+    color: #E0AE00;
+    margin: 30px;
+    border-bottom: solid 3px #E0AE00;
+    display: inline-block;
+}
+
+.listWord {
+    display: inline-block;
+    width: 60%;
+    color: #000823;
+}
+
+.author {
+    color: #666666;
+}
+
+.likeBtn {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px 0 0;
+    color: #DDDDDD;
+}
+
+.mus_time {
+    vertical-align: top;
+    color: #666666;
+}
+
+.mus_add {
+    position: absolute;
+    right: 10px;
+}
+
+.mus_add i {
+    vertical-align: top;
+    color: #DDDDDD;
+}
+
+.listHr {
+    margin: 10px 0;
+    background-color: #F6DE6D;
+}
+
+.play_tool {
+    bottom: 70px;
+    height: 60px;
+    background-color: #FDFAF2;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+    padding: 5px 15px
+}
+
+.play_tool .likeBtn {
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.pause_circle {
+    width: 35px;
+    height: 35px;
+    border: solid 1px #F5CD40;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    color: #F5CD40;
+}
+
+.pause_circle i {
+    margin-top: 7px;
+}
+
+.pause_circle .fa-play {
+    margin-left: 5px;
+}
+
+.play_btn {
+    color: #666666;
+    font-size: 20px;
+    position: absolute;
+    top: 12px;
+}
+
+.playWord {
+    display: inline-block;
+    width: 35%;
+    color: #000823;
+}
+
+.playbtn_item {
+    margin: 0 10px;
+}
+
+.more_btn {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    color: #666666;
+}
