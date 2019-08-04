@@ -43,6 +43,7 @@ function goArtList() {
     $("#artList").removeClass("hide");
     $(".toolBtn").removeClass("active");
     $("#playLists").addClass("active");
+    $("body").attr("style", "background-color:#fff;");
 }
 
 function goHome() {
@@ -51,4 +52,5 @@ function goHome() {
     $("#artList").addClass("hide");
     $(".toolBtn").removeClass("active");
     $("#goHomeBtn").addClass("active");
+    $("body").attr("style", "background-color:#F5CD40;");
 }
