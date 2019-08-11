@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>THE F2E-3_Online Payment</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/fontawesome-free-5.9.0-web/css/all.min.css">
+    <link rel="stylesheet" href="F2E_OnlinePayment.css">
+
+</head>
+
+<body>
+    <nav class="pay_nav">
+        <img src="img/logo.svg">
+    </nav>
+    <section>
+        <div class="order_list">
+            <div class="stap_div">
+                <div class="stap active"><i class="far fa-check-circle"></i><span class="m-l">確認購物車</span></div>
+                <span class="m-r m-l stap_arrow"><i class="fas fa-chevron-right"></i></span>
+                <div class="stap">
+                    <div class="stap_circle">2</div><span class="m-l">選擇配送付款方式</span>
+                </div>
+                <span class="m-r m-l stap_arrow"><i class="fas fa-chevron-right"></i></span>
+                <div class="stap">
+                    <div class="stap_circle">3</div><span class="m-l">確認訂購</span>
+                </div>
+            </div>
+            <div class="order_detail">
+                <div class="order_title">
+                    <h3>訂單明細</h3>
+                    <div>(JC293016)</div>
+                </div>
+                <div class="order_right">
+                    <span class="m-l-xxl">
+                        <span>商品小計 </span>
+                        <span class="m-l"> NT$ 880</span>
+                    </span>
+                    <span class="m-l-xxl">
+                        <span>運費 </span>
+                        <span class="m-l"> NT$ 60</span>
+                    </span>
+                    <span class="m-l-xxl">
+                        <span>總金額 </span>
+                        <h5 class="torder_list_total">NT$ 940</h5>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="pay_type_div">
+            <div class="pay_card active_card">
+                <span class="radio_btn">
+                    <i class="fas fa-check-circle"></i>
+                </span>
+                <span class="m-l type_icon">
+                    <img src="img/icon_store.svg">
+                </span>
+                <span class="pay_word">
+                    <div class="pay_type_title">超商取貨 付款</div>
+                    <div class="pay_p">24隔日取貨說明</div>
+                </span>
+            </div>
+            <!--  -->
+            <div class="pay_card">
+                <span class="radio_btn">
+                    <i class="far fa-circle"></i>
+                </span>
+                <span class="m-l type_icon">
+                    <img src="img/icon_card.svg">
+                </span>
+                <span class="pay_word">
+                    <div class="pay_type_title">信用卡 付款</div>
+                    <div class="pay_p">VISA, Master, JCB, 聯合信用卡</div>
+                </span>
+            </div>
+            <!--  -->
+            <div class="pay_card">
+                <span class="radio_btn">
+                    <i class="far fa-circle"></i>
+                </span>
+                <span class="m-l type_icon">
+                    <img src="img/line_pay.svg">
+                </span>
+                <span class="pay_word">
+                    <div class="pay_type_title">LINE Pay 付款</div>
+                    <div class="pay_p">使用line point折抵消費</div>
+                </span>
+            </div>
+            <!--  -->
+            <div class="pay_card">
+                <span class="radio_btn">
+                    <i class="far fa-circle"></i>
+                </span>
+                <span class="m-l type_icon">
+                    <img src="img/unionpay.png">
+                </span>
+                <span class="pay_word">
+                    <div class="pay_type_title">銀聯卡 付款</div>
+                    <div class="pay_p">支付成功頁面僅為銀聯卡回覆訊息，交易是否完成請需以本商店通知為準</div>
+                </span>
+            </div>
+            <!--  -->
+            <div class="pay_card">
+                <span class="radio_btn">
+                    <i class="far fa-circle"></i>
+                </span>
+                <span class="m-l type_icon">
+                    <img src="img/icon_atm.svg">
+                </span>
+                <span class="pay_word">
+                    <div class="pay_type_title">Web ATM 付款</div>
+                    <div class="pay_p">網路銀行ATM操作說明</div>
+                </span>
+            </div>
+
+        </div>
+        <div class="notice_div">
+            <div>・請確認您填寫的資料是否正確，一旦訂單完成後，付款與物流方式皆無法修改。</div>
+            <div>・使用ATM轉帳，將依據銀行入帳日，依序進行出貨/排貨。</div>
+            <div>・每筆訂單所提供的「ATM專屬虛擬帳號」皆不同，若您欲使用本項服務，敬請放心進行匯款作業，安全又便利！</div>
+            <div>・若訂單內含預購、無庫存商品調貨時間請參考「商品平均調貨時間」。</div>
+            <div>・若您對取貨或付款的方式有疑問，請詳閱<span class="hilight">「購買說明」</span>。</div>
+            <div class="point_word">・請確認您已詳閱並瞭解本站<span class="hilight">「購買說明」</span>內容，訂單完成即表示您已同意其中的各項說明。</div>
+        </div>
+        <div class="btn_div">
+            <div class="pay_btn pre_step">上一步</div>
+            <div class="pay_btn next_step">下一步</div>
+        </div>
+    </section>
+</body>
+
+</html>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="F2E_OnlinePayment.js"></script>

@@ -1,0 +1,205 @@
+body {
+    background-color: #FFFFFF
+}
+
+.hide {
+    display: none !important;
+}
+
+.m-t {
+    margin-top: 15px;
+}
+
+.m-t-xl {
+    margin-top: 30px;
+}
+
+.m-l {
+    margin-left: 15px;
+}
+
+.m-l-xxl {
+    margin-left: 80px;
+}
+
+.m-r {
+    margin-right: 15px;
+}
+
+.pull-right {
+    float: right;
+}
+
+/* ======================== */
+.pay_nav {
+    padding: 20px;
+}
+
+.order_list {
+    background-color: linear-gradient(45deg, #8BC1EF, #82D6D6);
+    background: -moz-linear-gradient(45deg, #8BC1EF, #82D6D6);
+    background: -webkit-linear-gradient(45deg, #8BC1EF, #82D6D6);
+    background: -o-linear-gradient(45deg, #8BC1EF, #82D6D6);
+    height: 130px;
+    width: 100%;
+    position: relative;
+    margin: 30px 0;
+}
+
+.stap_div {
+    background-color: #F5F7FA;
+    height: 54px;
+    width: 60%;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 0;
+    text-align: center;
+    color: #303133;
+}
+
+.stap {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.stap.active {
+    color: #4BC9C9;
+}
+
+.stap_div i {
+    font-size: 24px;
+}
+
+.stap_arrow {
+    color: #C0C4CC;
+}
+
+.stap_circle {
+    width: 24px;
+    height: 24px;
+    border: solid 2px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 20px;
+}
+
+.order_detail {
+    color: #ffffff;
+    padding: 40px 20px;
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.order_title {
+    border-left: solid 2px #ffffff;
+    padding: 0 15px;
+    display: inline-block;
+}
+
+.order_right {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.torder_list_total {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.pay_type_div {
+    width: 768px;
+    margin: 0 auto;
+}
+
+.pay_card {
+    width: 48%;
+    height: 120px;
+    border: solid 1px #DCDFE6;
+    border-radius: 4px;
+    padding: 35px 20px;
+    color: #DCDFE6;
+    display: inline-block;
+    margin: 5px;
+}
+
+.pay_card span {
+    vertical-align: middle;
+}
+
+.pay_word {
+    display: inline-block;
+    color: #606266;
+    margin-left: 15px;
+    font-size: 12px;
+    width: 60%;
+    float: right;
+}
+
+.radio_btn i {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.type_icon img {
+    width: 60px;
+}
+
+.notice_div {
+    font-size: 12px;
+    color: #909399;
+    width: 60%;
+    margin: 30px auto;
+}
+
+.hilight {
+    color: #4BC9C9;
+}
+
+.point_word {
+    color: #000000;
+}
+
+.btn_div {
+    width: 60%;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.pay_btn {
+    border-radius: 4px;
+    display: inline-block;
+    padding: 10px 40px;
+    margin: 8px;
+}
+
+.pre_step {
+    border: solid 1px #DCDFE6;
+}
+
+.next_step {
+    background-color: #4BC9C9;
+    color: #ffffff;
+}
+
+.radio_btn i {
+    cursor: pointer;
+}
+
+.radio_btn .fa-check-circle {
+    color: #4BC9C9;
+}
+
+.radio_btn .fa-circle:hover {
+    color: #4BC9C9;
+}
+
+.active_card {
+    background-color: #F5F7FA;
+    border-color: #4BC9C9;
+}
