@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>THE F2E-2_訂房網站</title>
+
+    <link rel="stylesheet" href="../css/bootstrap-4.2.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/fontawesome-free-5.9.0-web/css/all.min.css">
+    <link rel="stylesheet" href="lib/daterangepicker.css">
+    <link rel="stylesheet" href=" F2E_Booking.css">
+
+</head>
+
+<body>
+    <header class="bk_header">
+        <div class="logo_bg"><a href="index.html">TRAVEL</a></div>
+    </header>
+    <div id="roomDetail"></div>
+
+
+</body>
+
+</html>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+<script src="../js/underscore/underscore-min.js"></script>
+<script src="lib/moment.min.js"></script>
+<script src="lib/daterangepicker.js"></script>
+<script src="F2E_Booking.js"></script>
+<script>
+    $(function () {
+        getRoomDetail();
+        
+    });
+</script>
+
+<script type="text/html" id="roomDetailTemplate">
+    <section>
+        <div class="room_img_div">
+            <div class="img_left">
+                <img
+                    src="{{=imageUrl1}}">
+            </div>
+            <div class="img_right">
+                <div class="img_sm">
+                    <img
+                        src="{{=imageUrl1}}">
+                </div>
+                <div class="img_sm">
+                    <img
+                        src="{{=imageUrl2}}">
+                </div>
+                <div class="img_sm">
+                    <img
+                        src="{{=imageUrl3}}">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <!-- info -->
+            <div class="info_box">
+                <div class="info_left">
+                    <div class="info_item">
+                        <div class="info_title">房間人數:</div>
+                        <div>{{=peopleNumber}}人</div>
+                    </div>
+                    <div class="info_item">
+                        <div class="info_title">床型:</div>
+                        <div>{{=Bed}}</div>
+                    </div>
+                    <div class="info_item">
+                        <div class="info_title">房間大小:</div>
+                        <div>{{=footage}}平方公尺</div>
+                    </div>
+                    <div class="info_item">
+                        <div class="info_title">衛浴數量:</div>
+                        <div>{{=privateBath}}間</div>
+                    </div>
+                </div>
+                <div class="info_right">
+                    <div class="info_item">
+                        <div class="info_title">CheckIn 時間</div>
+                        <div>{{=checkIn}}</div>
+                    </div>
+                    <div class="info_item">
+                        <div class="info_title">CheckOut 時間</div>
+                        <div>{{=checkOut}}</div>
+                    </div>
+                </div>
+            </div>
+            <!-- detail -->
+            <div class="row m-t-xl">
+                <div class="col-md-7">
+                    <div class="detail_room_info">
+                        <h2>{{=name}}</h2>
+                        <p>{{=description}}</p>
+                    </div>
+                    <div class="device_div">
+                        <h5 class="m-t m-b">設備與服務</h5>
+                        <div class="device_box">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="device_item" data-boolean={{=WiFi}}>
+                                        <span class="device_icon"><i class="fas fa-wifi"></i></span>
+                                        <span class="m-l"> wifi : </span>
+                                        <span class="isHave"></span>
+                                    </div>
+                                    <div class="device_item" data-boolean={{=MiniBar}}>
+                                        <span class="device_icon"><i class="fas fa-glass-martini-alt"></i></span>
+                                        <span class="m-l"> Mini Bar : </span>
+                                        <span class="isHave"></span>
+                                    </div>
+                                    <div class="device_item" data-boolean={{=Television}}>
+                                        <span class="device_icon"><i class="fas fa-phone"></i></span>
+                                        <span class="m-l"> 電話 : </span>
+                                        <span class="isHave"></span>
+                                    </div>
+                                    <div class="device_item" data-boolean={{=Refrigerator}}>
+                                        <span class="device_icon"><img src="img/refrigerator.svg"></span>
+                                        <span class="m-l"> 冰箱 : </span>
+                                        <span class="isHave"></span>
+                                    </div>
+                                    <div class="device_item" data-boolean={{=GreatView}}>
+                                        <span class="device_icon"><i class="fas fa-mountain"></i></span>
+                                        <span class="m-l"> 漂亮的視野 : </span>
+                                        <span class="isHave"></span>
+                                    </div>
+                                    <div class="device_item" data-boolean={{=ChildFriendly}}>
+                                        <span class="device_icon"><i class="fas fa-baby"></i></span>
+                                        <span class="m-l"> 適合兒童 : </span>
+                                        <span class="isHave"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="device_item" data-boolean={{=Breakfast}}>
+                                        <span class="device_icon"><i class="fas fa-coffee"></i></span>
+                                        <span class="m-l"> 早餐 : </span>
+                                        <span class="isHave"></span>
+                                    </div>
+                                    <div class="device_item" data-boolean={{=RoomService}}>
+                                        <span class="device_icon"><i class="fas fa-concierge-bell"></i></span>
+                                        <span class="m-l"> Room Service : </span>
+                                        <span class="isHave"></span>
+                                    </div>
+                                    <div class="device_item" data-boolean={{=AirConditioner}}>
+                                        <span class="device_icon"><i class="fas fa-wind"></i></span>
+                                        <span class="m-l"> 空調 : </span>
+                                        <span class="isHave"></span>
+                                    </div>
+                                    <div class="device_item" data-boolean={{=Sofa}}>
+                                        <span class="device_icon"><i class="fas fa-couch"></i></span>
+                                        <span class="m-l"> 沙發 : </span>
+                                        <span class="isHave"></span>
+                                    </div>
+                                    <div class="device_item" data-boolean={{=SmokeFree}}>
+                                        <span class="device_icon"><i class="fas fa-smoking-ban"></i></span>
+                                        <span class="m-l"> 禁止吸煙 : </span>
+                                        <span class="isHave"></span>
+                                    </div>
+                                    <div class="device_item" data-boolean={{=PetFriendly}}>
+                                        <span class="device_icon"><i class="fas fa-dog"></i></span>
+                                        <span class="m-l"> 寵物攜帶 : </span>
+                                        <span class="isHave"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- 訂購 -->
+                <div class="col-md-5">
+                    <div class="form_card">
+                        <div class="form_top">
+                            <div class="form_price_div">
+                                <div class="form_dayType">平日(一~四)</div>
+                                <div class="from_price">$NT {{=normalDayPrice}} / 晚</div>
+                            </div>
+                            <div class="form_price_div">
+                                <div class="form_dayType">假日(五~日)</div>
+                                <div class="from_price">$NT {{=holidayPrice}} / 晚</div>
+                            </div>
+                        </div>
+                        <!-- form -->
+                        <div class="bk_form">
+                            <div class="m-t">
+                                <label>姓名</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="m-t">
+                                <label>電話</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="m-t">
+                                <label>日期</label>
+                                <input class="form-control date_picker" type="text" />
+                            </div>
+                            <div class="m-t">
+                                <label>房客</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="btn_success">預訂房間 <span class="m-l">→</span></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</script>

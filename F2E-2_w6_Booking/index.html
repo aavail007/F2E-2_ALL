@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>THE F2E-2_訂房網站</title>
+
+    <link rel="stylesheet" href="../css/bootstrap-4.2.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/fontawesome-free-5.9.0-web/css/all.min.css">
+    <link rel="stylesheet" href=" F2E_Booking.css">
+
+</head>
+
+<body>
+    <header class="bk_header">
+        <div class="logo_bg"><a href="index.html">TRAVEL</a></div>
+    </header>
+    <section class="top_btn">
+        <div class="container m-t">
+            <div class="bk_btn bk_btn_default active" id="featured">精選房源</div>
+            <div class="bk_btn bk_btn_default" id="praise">好評房源</div>
+            <div class="bk_btn bk_btn_default" id="special">特殊房源</div>
+            <div class="bk_btn bk_btn_default" id="parity">平價房源</div>
+        </div>
+    </section>
+    <section class="room_section">
+        <div class="container m-t">
+            <div class="row" id="roomCardRow"></div>
+        </div>
+    </section>
+</body>
+
+</html>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+<script src="../js/underscore/underscore-min.js"></script>
+<script src="F2E_Booking.js"></script>
+
+<script>
+    $(function () {
+        getRooms();
+    });
+</script>
+<script type="text/html" id="roomCardTemplate">
+    <div class="col-md-4 room_col">
+        <a href="roomDetail.html?room={{=roomID}}">
+            <div class="room_card" id="{{=roomID}}">
+                <img src="{{=imageUrl}}">
+                <div class="word_bk"></div>
+                <p class="card_room_name">{{=name}}</p>
+                <div class="room_card_info">
+                    <div class="info_name">{{=name}}</div>
+                    <div class="info_bottom">
+                        <div class="price_info">
+                            <div class="dayType">平日(一~四)</div>
+                            <div class="info_price">$NT {{=normalDayPrice}} / 晚</div>
+                        </div>
+                        <div class="price_info">
+                            <div class="dayType">假日(五~日)</div>
+                            <div class="info_price">$NT {{=holidayPrice}} / 晚</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</script>

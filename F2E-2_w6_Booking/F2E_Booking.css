@@ -1,0 +1,387 @@
+body {
+    background-color: #C8D6C9;
+}
+
+.hide {
+    display: none !important;
+}
+
+.m-t {
+    margin-top: 15px;
+}
+
+.m-t-xl {
+    margin-top: 30px;
+}
+
+.m-l {
+    margin-left: 15px;
+}
+
+.m-l-xxl {
+    margin-left: 80px;
+}
+
+.m-b {
+    margin-bottom: 15px;
+}
+
+.pull-right {
+    float: right;
+}
+
+/* ＝＝＝＝＝＝ */
+body {
+    background-color: #F2F2F2;
+}
+
+.bk_header {
+    background-color: #fff;
+    width: 100%;
+    height: 50px;
+}
+
+.logo_bg {
+    background-color: #2A58A8;
+    height: 100%;
+    width: 163px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 50px;
+    letter-spacing: 6.4px;
+    display: inline-block;
+}
+
+.logo_bg a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.top_btn {
+    border-bottom: solid 1px #E0E0E0;
+    padding-bottom: 10px;
+}
+
+.bk_btn {
+    padding: 10px 40px;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 12px;
+    cursor: pointer;
+
+}
+
+.bk_btn_default {
+    background-color: transparent;
+    border: solid 1px #E0E0E0;
+}
+
+.bk_btn_default:hover,
+.bk_btn_default:active,
+.bk_btn_default:focus {
+    background-color: #fff;
+    border: solid 1px #E0E0E0;
+    color: #2A58A8;
+}
+
+.bk_btn_default.active {
+    background-color: #fff;
+    border: solid 1px #E0E0E0;
+    color: #2A58A8;
+}
+
+.room_card {
+    background-color: #fff;
+    border-radius: 5px;
+    height: 400px;
+    overflow: hidden;
+    margin: 10px 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.room_card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.card_room_name {
+    position: absolute;
+    bottom: 0px;
+    left: 40px;
+    font-size: 20px;
+    color: #fff;
+}
+
+#featured {
+    margin-left: 0;
+}
+
+.word_bk {
+    position: absolute;
+    bottom: 0px;
+    background: -moz-linear-gradient(rgba(51, 51, 51, 0) 0%, rgba(51, 51, 51, 1) 100%);
+    background: -webkit-linear-gradient(rgba(51, 51, 51, 0) 0%, rgba(51, 51, 51, 1) 100%);
+    background: linear-gradient(rgba(51, 51, 51, 0) 0%, rgba(51, 51, 51, 0.32) 100%);
+    width: 100%;
+    height: 50px;
+    display: inline-block;
+}
+
+.room_card_info {
+    position: absolute;
+    bottom: -150px;
+    background-color: #fff;
+    height: 128px;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.room_card:hover .room_card_info {
+    bottom: 0;
+}
+
+.info_bottom {
+    font-size: 0;
+}
+
+.price_info {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    border-top: solid 1px #eee;
+    font-size: 14px;
+    padding: 15px;
+    position: relative;
+}
+
+.price_info:first-child {
+    border-right: solid 1px #eee;
+}
+
+.info_name {
+    text-align: center;
+    font-size: 20px;
+    color: #2A58A8;
+    padding: 15px;
+}
+
+.dayType {
+    color: #B4AFAA;
+    font-size: 14px;
+}
+
+.info_price {
+    color: #333333;
+    font-size: 16px;
+}
+
+/* detail */
+.room_img_div {
+    font-size: 0;
+    position: relative;
+}
+
+.img_left {
+    position: relative;
+    width: 75%;
+    display: inline-block;
+    height: 540px;
+    overflow: hidden;
+}
+
+.room_img_div img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.img_right {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    display: inline-block;
+    top: 0;
+}
+
+.img_sm {
+    display: inline-block;
+    height: 180px;
+    overflow: hidden;
+}
+
+.info_box {
+    margin: 20px 0;
+    background-color: #fff;
+    border: solid 1px #E0E0E0;
+    width: 100%;
+    /* height: 100px; */
+    border-radius: 5px;
+    padding: 25px;
+    font-size: 0;
+}
+
+.info_left {
+    width: 60%;
+    border-right: solid 1px #eee;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.info_item {
+    display: inline-block;
+    margin: 0 30px;
+    font-size: 24px;
+    color: #333333;
+}
+
+.info_title {
+    color: #B4AFAA;
+    font-size: 16px;
+}
+
+.info_right {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.detail_room_info {
+    width: 100%;
+    padding: 0 30px;
+    border-left: solid 3px #508DF6;
+    color: #508DF6;
+}
+
+.detail_room_info p {
+    color: #333333;
+}
+
+.device_box {
+    width: 100%;
+    border: solid 1px #E0E0E0;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.device_icon {
+    width: 20px;
+    display: inline-block;
+}
+
+.device_item {
+    margin: 15px;
+}
+
+.form_card {
+    width: 100%;
+    height: 550px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.form_top {
+    background-color: #2A58A8;
+    font-size: 0px;
+    padding: 25px;
+    border-radius: 5px 5px 0 0;
+}
+
+.form_price_div {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    width: 50%;
+}
+
+.form_price_div:first-child {
+    border-right: solid 1px #fff;
+}
+
+.form_dayType {
+    font-size: 16px;
+}
+
+.from_price {
+    font-size: 20px;
+}
+
+.bk_form {
+    padding: 20px 30px;
+}
+
+.btn_success {
+    background-color: #508DF6;
+    padding: 10px 20px;
+    width: 100%;
+    color: #fff;
+    border-radius: 5px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* date picker */
+.daterangepicker .drp-calendar.right {
+    position: absolute !important;
+    right: 0 !important;
+    top: 0 !important;
+}
+
+.daterangepicker .drp-calendar.right tbody {
+    display: none !important;
+}
+
+.daterangepicker .drp-calendar.right thead>tr:nth-child(2) {
+    display: none !important;
+}
+
+.daterangepicker .drp-calendar.right th.month {
+    display: none !important;
+}
+
+.daterangepicker .drp-calendar.right .calendar-table {
+    background: transparent !important;
+}
+
+.daterangepicker .daterangepicker.ltr .ranges,
+.daterangepicker.ltr .drp-calendar {
+    float: none !important;
+}
+
+.daterangepicker .drp-calendar.right .daterangepicker_input {
+    position: absolute !important;
+}
+
+.drp-buttons {
+    display: none !important;
+}
+
+
+@media (max-width:768px) {
+    .info_item {
+        display: block;
+    }
+
+    .info_box {
+        padding: 20px 10px;
+    }
+
+    .img_left {
+        width: 70%;
+        height: 210px;
+    }
+
+    .img_right {
+        width: 30%;
+    }
+
+    .img_sm {
+        height: 70px;
+    }
+
+    #featured {
+        margin: 12px;
+    }
+}
