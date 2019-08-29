@@ -1,0 +1,193 @@
+body {
+    background-color: #C8D6C9;
+}
+
+.hide {
+    display: none !important;
+}
+
+.m-t {
+    margin-top: 15px;
+}
+
+.m-t-xl {
+    margin-top: 30px;
+}
+
+.m-l {
+    margin-left: 15px;
+}
+
+.m-l-lg {
+    margin-left: 30px;
+}
+
+.m-l-xxl {
+    margin-left: 80px;
+}
+
+.m-b {
+    margin-bottom: 15px;
+}
+
+.pull-right {
+    float: right;
+}
+
+/* ＝＝＝＝＝＝ */
+body {
+    background-color: #1E1E1E;
+}
+
+.left_bar {
+    position: fixed;
+    background-color: #303030;
+    width: 50px;
+    height: 100%;
+    text-align: center;
+    color: #D4D4D4;
+}
+
+.nav_icon {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.nav_word {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.nav_arrow {
+    margin: 10px 0;
+    color: #ffffff4a;
+}
+
+.chat_content {
+    margin-left: 50px;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    background: #1e1e1e;
+    color: #D4D4D4;
+    border: 0;
+}
+
+.nav-tabs .nav-item {
+    width: 200px;
+}
+
+.nav-tabs {
+    border-bottom: 0;
+    background-color: #303030;
+}
+
+.nav-tabs .nav-link {
+    color: #D4D4D4;
+    border-radius: 0;
+    padding: 12px 12px 12px 30px;
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: -2px;
+    font-size: 12px;
+}
+
+.bottom_input {
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 50px);
+    height: 170px;
+    border-top: solid 30px #303030;
+}
+
+.tab-content {
+    color: #D4D4D4;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    border: 0;
+}
+
+.a_color{
+    color:#4EC9B0;
+}
+
+.id_color {
+    color: #9CDCFE;
+}
+
+.id_color2 {
+    color: #499CD6;
+}
+
+.id_color3 {
+    color: #CE9178;
+}
+
+.id_color4 {
+    color: #C586C0;
+}
+
+.face_color {
+    color: #D7BA7D;
+}
+
+.talk_color {
+    color: #D4D4D4;
+}
+
+.time_color {
+    color: #707070;
+}
+
+.line_item {
+    position:absolute;
+    top:-25px;
+    right: 20px;
+    color: #D4D4D4;
+}
+
+.send_btn {
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    width: 140px;
+    height: 30px;
+    background-color: #2A2A2A;
+    color: #fff;
+    text-align: center;
+    font-size:12px;
+    line-height: 30px; 
+}
+
+.tool_div {
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    color: #fff;
+    height:30px;
+    padding: 0 30px;
+}
+
+.tool_div i {
+    margin: 0 10px;
+}
+
+.ch_textarea {
+    width: 100%;
+    height: 110px;
+    background-color: #1E1E1E;
+    border:0;
+    resize: none;
+    color: #fff;
+    padding: 15px 30px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none; }
+@media (max-width:768px) {}
