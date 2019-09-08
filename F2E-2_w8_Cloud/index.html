@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>THE F2E-2_雲端硬碟</title>
+
+    <link rel="stylesheet" href="../css/bootstrap-4.2.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/fontawesome-free-5.9.0-web/css/all.min.css">
+    <link rel="stylesheet" href="F2E-2_Cloud.css">
+
+</head>
+
+<body>
+    <!-- nav -->
+    <div class="cl_nav">
+        <div class="cl_title">
+            <span><i class="fas fa-cloud"></i></span>
+            <span>MCloud.</span>
+        </div>
+        <div class="cl_tool">
+            <div class="upload_btn">
+                <span class="m-r-xs"><i class="fas fa-cloud-upload-alt"></i></span>
+                <span>上傳檔案</span>
+            </div>
+            <div class="nav_middle">
+                <div class="nav_btn">
+                    <span class="m-r-xs"><i class="far fa-folder"></i></span>
+                    <span>我的檔案</span>
+                </div>
+                <div class="nav_btn">
+                    <span class="m-r-xs"><i class="far fa-star"></i></span>
+                    <span>已加星號</span>
+                </div>
+                <div class="nav_btn">
+                    <span class="m-r-xs"><i class="far fa-file-alt"></i></span>
+                    <span>檔案共享</span>
+                </div>
+                <div class="nav_btn">
+                    <span class="m-r-xs"><i class="far fa-trash-alt"></i></span>
+                    <span>垃圾桶</span>
+                </div>
+            </div>
+            <div class="nav_bottom">
+                <div class="user_img">
+                    <img src="img/user.JPG">
+                </div>
+                <div class="user_info">
+                    <div>Chen</div>
+                    <div class="identy">User</div>
+                </div>
+                <div class="progress m-t">
+                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"></div>
+                </div>
+                <div class="capacity">
+                    <span>容量 1.2 GB / 10 GB</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nav end -->
+    <div class="cl_content">
+        <div class="search_div">
+            <div class="search_icon"><i class="fas fa-search"></i></div>
+            <input type="text" placeholder="搜尋您的檔案"/>
+            <div class="down_menu">
+                <i class="fas fa-caret-down"></i>
+            </div>
+        </div>
+        <div class="my_file">
+            <div class="my_file_top">
+                <div class="content_title">我的檔案</div>
+                <div class="see_more">看更多</div>
+            </div>
+            
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th colspan="2" scope="col">名稱 <i class="fas fa-caret-down"></i></th>
+                        <th scope="col">上次修改</th>
+                        <th scope="col">檔案大小</th>
+                        <th scope="col">擁有者</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><i class="fas fa-file-video"></i></th>
+                        <td>走吧！一起用日語去旅行.mp4</td>
+                        <td>2019/6/10</td>
+                        <td>6.5MB</td>
+                        <td>Chen</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><i class="fas fa-file-word"></i></th>
+                        <td>20191011-1020日本東京自由行.doc</td>
+                        <td>2019/6/25</td>
+                        <td>2.3MB</td>
+                        <td>Chen</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><i class="fas fa-file-pdf"></i></th>
+                        <td>東京都內案內手冊.pdf</td>
+                        <td>2019/7/5</td>
+                        <td>2.3MB</td>
+                        <td>Chen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- 共享檔案 -->
+        <div class="my_file">
+            <div class="my_file_top">
+                <div class="content_title">共享檔案</div>
+                <div class="see_more">看更多</div>
+            </div>
+            
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th colspan="2" scope="col">名稱 <i class="fas fa-caret-down"></i></th>
+                        <th scope="col">上次修改</th>
+                        <th scope="col">檔案大小</th>
+                        <th scope="col">擁有者</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><i class="fas fa-file-pdf"></i></th>
+                        <td>iOS13 Guideline.pdf</td>
+                        <td>2019/6/10</td>
+                        <td>6.5MB</td>
+                        <td>Chen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+<script src="F2E-2_Cloud.js"></script>
+
+<script>
+    $(function () {
+
+    });
+</script>
