@@ -57,6 +57,9 @@ body {
     background-color: #F4F6F3;
 }
 
+body.night  {
+    background-color: #3f4a39;
+}
 .note_nav {
     position: relative;
     width: 100%;
