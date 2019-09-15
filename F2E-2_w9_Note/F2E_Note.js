@@ -49,7 +49,6 @@ $(document).ready(function() {
 
 tinymce.init({
     selector: 'textarea',
-    theme : "advanced",
     mobile: {
       theme: 'silver',
     },
