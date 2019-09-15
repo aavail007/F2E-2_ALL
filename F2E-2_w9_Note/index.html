@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>THE F2E-9_Note</title>
+
+    <link rel="stylesheet" href="../css/bootstrap-4.2.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/fontawesome-free-5.9.0-web/css/all.min.css">
+    <link rel="stylesheet" href=" F2E_Note.css">
+
+</head>
+
+<body id="noteBody" class="">
+    <!-- nav -->
+    <nav class="note_nav">
+        <div class="bars" id="barsBtn">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="display_type">
+            <span class="m-r active" id="boxType">
+                <i class="fas fa-th-large"></i>
+            </span>
+            <span id="listType">
+                <i class="fas fa-th-list"></i>
+            </span>
+        </div> 
+    </nav>
+    <!-- content -->
+    <section class="note_section">
+        <img class="section_img" src="img/day.png">
+        <div class="category_title">所有筆記</div>
+        <div class="count">共有 2 個筆記</div>
+        <div class="note_content">
+            <div class="note_box">
+                <div class="note_title ellipsis">靈感隨手記</div>
+                <div class="star_icon"><i class="far fa-star"></i></div>
+                <div class="note_p line4_ellipsis">靈感總是說來就來，所以就隨手記一下～ ．草當主題 ．花當主題 ．天空主題</div>
+            </div>
+            <div class="note_box">
+                <div class="note_title ellipsis">無標題</div>
+                <div class="star_icon"><i class="far fa-star"></i></div>
+                <div class="note_p line4_ellipsis">業們是上即善時心現背藥此望角西少，我以況這，心在如對今。次後其本電很我要檢期告創就張點禮文市腦</div>
+            </div>
+        </div>
+    </section>
+    <!-- add button -->
+    <div class="new_note_btn" id="newNoteBtn">New Note</div>
+    <!-- nav div -->
+    <div class="nav_div">
+        <div class="close_nav">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul class="nav_ul">
+            <li>所有筆記</li>
+            <li>已加星號</li>
+            <li id="displayTypeBtn">夜間模式</li>
+        </ul>
+    </div>
+
+    <!-- note detail card-->
+    <div class="note_detail">
+        <nav class="note_nav">
+            <div class="bars backBtn">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="detail_tool">
+                <span class="m-r">
+                    <i class="fas fa-star"></i>
+                </span>
+                <span>
+                    <i class="fas fa-pen"></i>
+                </span>
+            </div>
+        </nav>
+        <section class="detail_section">
+            <div class="detail_card">
+                <div class="card_title">靈感隨手記</div>
+                <div class="note_p">
+                    靈感總是說來就來，所以就隨手記一下～ ．草當主題 ．花當主題 ．天空主題 前幾天跟Amy聊到的那種也不錯！ 參考網址：http://www.ideaideaidea.com 還有上週去聽講座的做法也很好～可試試 水彩風格也可以try
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- edit div -->
+    <div class="edit_div">
+        <nav class="note_nav">
+            <div class="bars backBtn">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="detail_tool">
+                <span class="">
+                    Save
+                </span>
+            </div>
+        </nav>
+        <section class="edit_section">
+            <textarea id="editor1"></textarea>
+        </section>
+    </div>
+    
+</body>
+
+</html>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+<script src="../js/tinymce/tinymce.min.js"></script>
+<script src="F2E_Note.js"></script>
+
+<script>
+     
+</script>
